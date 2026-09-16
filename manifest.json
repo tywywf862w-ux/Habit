@@ -2,7 +2,7 @@
   "name": "Habits",
   "short_name": "Habits",
   "description": "Small steps. Big changes. A daily habit tracker.",
-  "start_url": "./habits.html",
+  "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "orientation": "any",

@@ -5,7 +5,7 @@
 
 const CACHE_NAME = 'habits-cache-v1';
 const APP_SHELL = [
-  './habits.html',
+  './index.html',
   './manifest.json',
   './icon-192.png',
   './icon-512.png',
