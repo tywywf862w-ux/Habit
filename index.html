@@ -116,11 +116,11 @@
 
   /* header */
   .top{
-    display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;
+    display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;
     position:sticky;top:0;z-index:20;
     background:var(--cream);
-    padding-top:calc(22px + env(safe-area-inset-top));
-    padding-bottom:18px;
+    padding-top:calc(16px + env(safe-area-inset-top));
+    padding-bottom:14px;
     margin-bottom:4px;
     border-bottom:1px solid var(--line);
   }
@@ -169,12 +169,12 @@
   .note-input:focus{background:rgba(0,0,0,0.03);border-radius:4px;}
   .theme-wrap{
     position:relative;display:flex;justify-content:center;
-    margin-top:8px;padding-top:7px;border-top:1px solid var(--streak-border);
+    margin-top:5px;padding-top:5px;border-top:1px solid var(--streak-border);
   }
   .theme-toggle{
     background:none;border:1.5px solid var(--line);color:var(--ink-soft);
-    width:30px;height:30px;border-radius:50%;
-    font-size:14px;cursor:pointer;display:flex;align-items:center;justify-content:center;
+    width:26px;height:26px;border-radius:50%;
+    font-size:12px;cursor:pointer;display:flex;align-items:center;justify-content:center;
     flex-shrink:0;
   }
   .theme-toggle:hover{background:var(--ring-bg);color:var(--ink);}
@@ -209,14 +209,14 @@
     background:var(--streak-bg);
     border:1px solid var(--streak-border);
     border-radius:var(--radius-lg);
-    padding:8px 14px;
+    padding:7px 12px;
     text-align:center;
     min-width:110px;
     flex-shrink:0;
   }
-  .streak .num{font-size:clamp(18px,5vw,26px);font-weight:700;display:flex;align-items:center;justify-content:center;gap:6px;white-space:nowrap;}
-  .streak .label{font-size:9.5px;letter-spacing:1.5px;color:var(--ink-soft);font-weight:600;margin-top:2px;white-space:nowrap;}
-  .streak .best-label{font-size:10.5px;color:var(--ink-soft);margin-top:5px;padding-top:5px;border-top:1px solid var(--streak-border);white-space:nowrap;}
+  .streak .num{font-size:clamp(18px,5vw,24px);font-weight:700;display:flex;align-items:center;justify-content:center;gap:5px;white-space:nowrap;}
+  .streak .label{font-size:9px;letter-spacing:1.2px;color:var(--ink-soft);font-weight:600;margin-top:1px;white-space:nowrap;}
+  .streak .best-label{font-size:10px;color:var(--ink-soft);margin-top:3px;padding-top:3px;border-top:1px solid var(--streak-border);white-space:nowrap;}
   .streak .best-label span{font-weight:700;color:var(--ink);}
 
   .milestone-badge{font-size:16px;line-height:1;}
@@ -236,10 +236,12 @@
     .brand .sub{font-size:9px;letter-spacing:2px;}
     .tag-input{font-size:15px;}
     .note-input{display:none;}
-    .streak{min-width:90px;padding:7px 10px;border-radius:12px;}
-    .streak .num{font-size:17px;gap:4px;}
-    .streak .label{font-size:8px;letter-spacing:1px;}
-    .streak .best-label{font-size:9px;}
+    .streak{min-width:88px;padding:6px 9px;border-radius:12px;}
+    .streak .num{font-size:16px;gap:3px;}
+    .streak .label{font-size:7.5px;letter-spacing:0.8px;}
+    .streak .best-label{font-size:8.5px;margin-top:2px;padding-top:2px;}
+    .theme-wrap{margin-top:4px;padding-top:4px;}
+    .theme-toggle{width:23px;height:23px;font-size:11px;}
   }
 
   /* weekly recap banner */
