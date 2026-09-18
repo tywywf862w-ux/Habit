@@ -267,7 +267,8 @@
   .recap-close:hover{color:var(--ink);}
 
   /* grid */
-  .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;min-width:0;}
+  .grid > *{min-width:0;}
   @media (max-width:759px){.grid{grid-template-columns:1fr;}}
   /* Wide but short (e.g. a phone in landscape) — same clean single-column
      stack, just reached via height instead of width. */
@@ -277,6 +278,7 @@
     border:1px solid var(--line);
     border-radius:var(--radius-lg);
     padding:22px;
+    min-width:0;
   }
   @media (max-width:480px){
     .card{padding:16px;}
@@ -284,7 +286,7 @@
   }
   .card-head{display:flex;align-items:center;gap:8px;margin-bottom:18px;color:var(--ink);flex-wrap:wrap;}
   .card-head h2{font-size:15px;font-weight:700;margin:0;letter-spacing:0.3px;}
-  .middle-col{display:flex;flex-direction:column;gap:18px;}
+  .middle-col{display:flex;flex-direction:column;gap:18px;min-width:0;}
 
   .view-toggle{
     margin-left:auto;display:flex;background:var(--ring-bg);
@@ -310,6 +312,7 @@
     padding:11px 2px;
     border-bottom:1px solid var(--line);
     position:relative;
+    min-width:0;
   }
   .habit-row:last-child{border-bottom:none;}
   .h-icon{
@@ -418,8 +421,9 @@
   .footer-note-input:focus{background:rgba(0,0,0,0.03);}
 
   /* donut */
-  .donut-row{display:flex;align-items:center;gap:24px;flex-wrap:wrap;}
-  .legend{display:flex;flex-direction:column;gap:10px;font-size:14px;}
+  .donut-row{display:flex;align-items:center;gap:24px;flex-wrap:wrap;min-width:0;}
+  .donut-row svg{flex-shrink:0;max-width:100%;}
+  .legend{display:flex;flex-direction:column;gap:10px;font-size:14px;min-width:0;}
   .legend div{display:flex;align-items:center;gap:8px;}
   .dot{width:9px;height:9px;border-radius:50%;}
   .legend .count{margin-left:auto;color:var(--ink-soft);font-weight:600;padding-left:14px;}
